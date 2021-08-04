@@ -12,8 +12,8 @@
         android:title="@string/title_cari" />
 
     <item
-        android:id="@+id/navigation_profil"
-        android:icon="@drawable/outline_account_circle_24"
-        android:title="@string/title_profil" />
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/outline_info_24"
+        android:title="@string/title_info" />
 
 </menu>

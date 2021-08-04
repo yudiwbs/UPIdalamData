@@ -1,14 +1,14 @@
-package edu.upi.upidalamdata.ui.profil;
+package edu.upi.upidalamdata.ui.info;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ProfilViewModel extends ViewModel {
+public class InfoViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ProfilViewModel() {
+    public InfoViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is notifications fragment");
     }

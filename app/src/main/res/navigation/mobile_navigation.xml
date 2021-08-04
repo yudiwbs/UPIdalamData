@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_cari" />
 
     <fragment
-        android:id="@+id/navigation_profil"
-        android:name="edu.upi.upidalamdata.ui.profil.ProfilFragment"
-        android:label="@string/title_profil"
-        tools:layout="@layout/fragment_profil" />
+        android:id="@+id/navigation_info"
+        android:name="edu.upi.upidalamdata.ui.info.InfoFragment"
+        android:label="@string/title_info"
+        tools:layout="@layout/fragment_info" />
 </navigation>

@@ -1,4 +1,4 @@
-package edu.upi.upidalamdata.ui.profil;
+package edu.upi.upidalamdata.ui.info;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,23 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import edu.upi.upidalamdata.databinding.FragmentProfilBinding;
+import edu.upi.upidalamdata.databinding.FragmentInfoBinding;
 
-public class ProfilFragment extends Fragment {
+public class InfoFragment extends Fragment {
 
-    private ProfilViewModel profilViewModel;
-    private FragmentProfilBinding binding;
+    private InfoViewModel infoViewModel;
+    private FragmentInfoBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        profilViewModel =
-                new ViewModelProvider(this).get(ProfilViewModel.class);
+        infoViewModel =
+                new ViewModelProvider(this).get(InfoViewModel.class);
 
-        binding = FragmentProfilBinding.inflate(inflater, container, false);
+        binding = FragmentInfoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textNotifications;
-        profilViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        infoViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
